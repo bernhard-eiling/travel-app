@@ -59,7 +59,7 @@
         return @"";
     }
     NSDateComponents *components = [[NSCalendar currentCalendar] components:NSCalendarUnitHour|NSCalendarUnitMinute fromDate:self.travelItem.departureDate toDate:self.travelItem.arrivalDate options:0];
-    return [NSString stringWithFormat:@"%li:%lih", components.hour, components.minute];
+    return [NSString stringWithFormat:@"%li:%02lih", components.hour, components.minute];
 }
 
 - (NSString *)stopsString {

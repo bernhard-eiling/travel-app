@@ -10,11 +10,18 @@
 
 @class BETravelItem;
 
+typedef enum {
+    BEOrderTypeDepartureTime,
+    BEOrderTypeArrivalTime,
+    BEOrderTypeDuration,
+} BEOrderType;
+
 typedef void (^BEUpdateCompletionBlock)(BOOL success, NSError *error);
 
 @interface BEResultsTableViewDataSource : NSObject <UITableViewDataSource>
 
 @property (strong, nonatomic, readonly) NSArray <BETravelItem *> *items;
+@property (nonatomic, readwrite) BEOrderType orderType;
 
 - (instancetype)initWithUrl:(NSURL *)url;
 - (void)updateWithCompletionBlock:(BEUpdateCompletionBlock)completion;

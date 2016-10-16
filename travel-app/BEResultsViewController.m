@@ -6,21 +6,24 @@
 //  Copyright © 2016 bernhardeiling.com. All rights reserved.
 //
 
-#import "BEResultsTableViewController.h"
+#import "BEResultsViewController.h"
 
 #import "BEResultsTableViewDataSource.h"
 
-@interface BEResultsTableViewController ()
+@interface BEResultsViewController ()
 
 @property (strong, nonatomic, readwrite) NSURL *url;
 @property (strong, nonatomic, readwrite) BEResultsTableViewDataSource *dataSource;
+@property (weak, nonatomic) IBOutlet UITableView *tableView;
+@property (weak, nonatomic) IBOutlet UISegmentedControl *orderSegmentedControl;
 
 @end
 
-@implementation BEResultsTableViewController
+@implementation BEResultsViewController
 
 - (instancetype)initWithUrl:(NSURL *)url {
-    self = [super init];
+    UIStoryboard *mainStoryboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    self = [mainStoryboard instantiateViewControllerWithIdentifier:@"BEResultsViewController"];
     if (self) {
         self.url = url;
     }
@@ -29,6 +32,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [self.orderSegmentedControl addTarget:self action:@selector(orderChange:) forControlEvents:UIControlEventValueChanged];
     self.tableView.rowHeight = 100;
     self.tableView.dataSource = self.dataSource;
     [self.tableView registerNib:[UINib nibWithNibName:@"BETravelItemTableViewCell" bundle:nil] forCellReuseIdentifier:@"BETravelItemTableViewCell"];
@@ -39,6 +43,10 @@
     }];
 }
 
+- (void)orderChange:(id)sender {
+    self.dataSource.orderType = (int)self.orderSegmentedControl.selectedSegmentIndex;
+    [self.tableView reloadData];
+}
 
 #pragma mark lazy instantiation
 

@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface BEResultsTableViewController : UITableViewController
+@interface BEResultsViewController : UIViewController
 
 - (instancetype)initWithUrl:(NSURL *)url;
 

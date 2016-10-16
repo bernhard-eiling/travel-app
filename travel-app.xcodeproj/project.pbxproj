@@ -16,7 +16,7 @@
 		9EC8EF611DB38FC6001C0EC2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9EC8EF5F1DB38FC6001C0EC2 /* LaunchScreen.storyboard */; };
 		9EC8EF6C1DB38FC7001C0EC2 /* travel_appTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EC8EF6B1DB38FC7001C0EC2 /* travel_appTests.m */; };
 		9EC8EF7B1DB39921001C0EC2 /* BETravelPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EC8EF7A1DB39921001C0EC2 /* BETravelPageViewController.m */; };
-		9EC8EF811DB39A88001C0EC2 /* BEResultsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EC8EF801DB39A88001C0EC2 /* BEResultsTableViewController.m */; };
+		9EC8EF811DB39A88001C0EC2 /* BEResultsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EC8EF801DB39A88001C0EC2 /* BEResultsViewController.m */; };
 		9EC8EF841DB3A7EF001C0EC2 /* BEResultsTableViewDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EC8EF831DB3A7EF001C0EC2 /* BEResultsTableViewDataSource.m */; };
 		9EC8EF871DB3B048001C0EC2 /* BETravelItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EC8EF861DB3B048001C0EC2 /* BETravelItem.m */; };
 		9EC8EF8B1DB3B5BE001C0EC2 /* BETravelItemTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EC8EF891DB3B5BE001C0EC2 /* BETravelItemTableViewCell.m */; };
@@ -56,8 +56,8 @@
 		9EC8EF6D1DB38FC7001C0EC2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9EC8EF791DB39921001C0EC2 /* BETravelPageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BETravelPageViewController.h; sourceTree = "<group>"; };
 		9EC8EF7A1DB39921001C0EC2 /* BETravelPageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BETravelPageViewController.m; sourceTree = "<group>"; };
-		9EC8EF7F1DB39A88001C0EC2 /* BEResultsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BEResultsTableViewController.h; sourceTree = "<group>"; };
-		9EC8EF801DB39A88001C0EC2 /* BEResultsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BEResultsTableViewController.m; sourceTree = "<group>"; };
+		9EC8EF7F1DB39A88001C0EC2 /* BEResultsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BEResultsViewController.h; sourceTree = "<group>"; };
+		9EC8EF801DB39A88001C0EC2 /* BEResultsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BEResultsViewController.m; sourceTree = "<group>"; };
 		9EC8EF821DB3A7EF001C0EC2 /* BEResultsTableViewDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BEResultsTableViewDataSource.h; sourceTree = "<group>"; };
 		9EC8EF831DB3A7EF001C0EC2 /* BEResultsTableViewDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BEResultsTableViewDataSource.m; sourceTree = "<group>"; };
 		9EC8EF851DB3B048001C0EC2 /* BETravelItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BETravelItem.h; sourceTree = "<group>"; };
@@ -150,8 +150,8 @@
 				9EC8EF511DB38FC6001C0EC2 /* Supporting Files */,
 				9EC8EF791DB39921001C0EC2 /* BETravelPageViewController.h */,
 				9EC8EF7A1DB39921001C0EC2 /* BETravelPageViewController.m */,
-				9EC8EF7F1DB39A88001C0EC2 /* BEResultsTableViewController.h */,
-				9EC8EF801DB39A88001C0EC2 /* BEResultsTableViewController.m */,
+				9EC8EF7F1DB39A88001C0EC2 /* BEResultsViewController.h */,
+				9EC8EF801DB39A88001C0EC2 /* BEResultsViewController.m */,
 				9EC8EF821DB3A7EF001C0EC2 /* BEResultsTableViewDataSource.h */,
 				9EC8EF831DB3A7EF001C0EC2 /* BEResultsTableViewDataSource.m */,
 				9EC8EF851DB3B048001C0EC2 /* BETravelItem.h */,
@@ -394,7 +394,7 @@
 				9EC8EF591DB38FC6001C0EC2 /* ViewController.m in Sources */,
 				9EC8EF841DB3A7EF001C0EC2 /* BEResultsTableViewDataSource.m in Sources */,
 				9EC8EF871DB3B048001C0EC2 /* BETravelItem.m in Sources */,
-				9EC8EF811DB39A88001C0EC2 /* BEResultsTableViewController.m in Sources */,
+				9EC8EF811DB39A88001C0EC2 /* BEResultsViewController.m in Sources */,
 				9EC8EF8B1DB3B5BE001C0EC2 /* BETravelItemTableViewCell.m in Sources */,
 				9EC8EF921DB3D9DB001C0EC2 /* NSDictionary+SaveParser.m in Sources */,
 				9EC8EF561DB38FC6001C0EC2 /* AppDelegate.m in Sources */,

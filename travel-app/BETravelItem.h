@@ -16,6 +16,7 @@
 @property (copy, nonatomic, readonly) NSDate *departureDate;
 @property (copy, nonatomic, readonly) NSDate *arrivalDate;
 @property (copy, nonatomic, readonly) NSNumber *numberStops;
+@property (nonatomic, readonly) NSTimeInterval duration;
 
 + (NSArray <BETravelItem *> *)travelItemsFromArray:(NSArray *)array;
 - (instancetype)initWithDictionary:(NSDictionary *)dataDictionary;

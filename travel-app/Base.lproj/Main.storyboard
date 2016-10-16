@@ -3,6 +3,8 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -24,6 +26,68 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="X3l-pj-2UB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="623" y="146"/>
+        </scene>
+        <!--Results View Controller-->
+        <scene sceneID="l2w-vf-KfI">
+            <objects>
+                <viewController storyboardIdentifier="BEResultsViewController" id="Pl0-iG-2Lh" customClass="BEResultsViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="dZG-ni-c74"/>
+                        <viewControllerLayoutGuide type="bottom" id="Agc-Ek-Ual"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="fsY-c8-vKa">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="0vl-c5-ftb">
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hga-JK-Hu8">
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sort Results" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ICs-X1-iJL">
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="SLR-mo-ZSF">
+                                        <segments>
+                                            <segment title="Departure"/>
+                                            <segment title="Arrival"/>
+                                            <segment title="Duration"/>
+                                        </segments>
+                                    </segmentedControl>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="ICs-X1-iJL" firstAttribute="top" secondItem="Hga-JK-Hu8" secondAttribute="top" constant="10" id="0U8-Ao-YTv"/>
+                                    <constraint firstItem="SLR-mo-ZSF" firstAttribute="leading" secondItem="Hga-JK-Hu8" secondAttribute="leading" constant="8" id="0iu-64-nAJ"/>
+                                    <constraint firstAttribute="trailing" secondItem="ICs-X1-iJL" secondAttribute="trailing" constant="10" id="J6U-LG-Nty"/>
+                                    <constraint firstAttribute="bottom" secondItem="SLR-mo-ZSF" secondAttribute="bottom" constant="8" id="J9a-Ou-Brv"/>
+                                    <constraint firstAttribute="height" constant="75" id="Lqq-HP-Q1m"/>
+                                    <constraint firstAttribute="trailing" secondItem="SLR-mo-ZSF" secondAttribute="trailing" constant="8" id="eP4-TK-xsD"/>
+                                    <constraint firstItem="ICs-X1-iJL" firstAttribute="leading" secondItem="Hga-JK-Hu8" secondAttribute="leading" constant="10" id="lTY-M7-tuy"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Agc-Ek-Ual" firstAttribute="top" secondItem="Hga-JK-Hu8" secondAttribute="bottom" id="9i0-Yq-0ux"/>
+                            <constraint firstItem="0vl-c5-ftb" firstAttribute="topMargin" secondItem="dZG-ni-c74" secondAttribute="bottom" id="Hhx-Pd-Kgp"/>
+                            <constraint firstItem="Hga-JK-Hu8" firstAttribute="top" secondItem="0vl-c5-ftb" secondAttribute="bottom" id="NR1-7a-Aip"/>
+                            <constraint firstItem="Hga-JK-Hu8" firstAttribute="leading" secondItem="fsY-c8-vKa" secondAttribute="leading" id="Sg1-Xw-SOX"/>
+                            <constraint firstAttribute="trailing" secondItem="Hga-JK-Hu8" secondAttribute="trailing" id="cjq-6v-rCb"/>
+                            <constraint firstItem="0vl-c5-ftb" firstAttribute="leading" secondItem="fsY-c8-vKa" secondAttribute="leading" id="d3s-fW-ifk"/>
+                            <constraint firstAttribute="trailing" secondItem="0vl-c5-ftb" secondAttribute="trailing" id="vha-ac-tHb"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="orderSegmentedControl" destination="SLR-mo-ZSF" id="VKI-1q-diC"/>
+                        <outlet property="tableView" destination="0vl-c5-ftb" id="kyT-FF-Qgh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AVF-jc-BGD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1408.8" y="144.3778110944528"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Z9c-Fy-6LN">

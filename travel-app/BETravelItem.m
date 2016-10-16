@@ -19,6 +19,7 @@
 @property (copy, nonatomic, readwrite) NSDate *departureDate;
 @property (copy, nonatomic, readwrite) NSDate *arrivalDate;
 @property (copy, nonatomic, readwrite) NSNumber *numberStops;
+@property (nonatomic, readwrite) NSTimeInterval duration;
 
 @end
 
@@ -46,6 +47,7 @@
         self.departureDate = [self.class.dateFormatter dateFromString:dataDictionary[@"departure_time"]];
         self.arrivalDate = [self.class.dateFormatter dateFromString:dataDictionary[@"arrival_time"]];
         self.numberStops = [dataDictionary numberWithKey:@"number_of_stops"];
+        self.duration = [self.arrivalDate timeIntervalSinceDate:self.departureDate];
     }
     return self;
 }
