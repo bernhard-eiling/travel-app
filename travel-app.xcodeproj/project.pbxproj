@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3E6F84EDFA83A5D148258062 /* libPods-travel-appTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ED4D4BC4E93DC658CD3BF54B /* libPods-travel-appTests.a */; };
 		9EC8EF531DB38FC6001C0EC2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EC8EF521DB38FC6001C0EC2 /* main.m */; };
 		9EC8EF561DB38FC6001C0EC2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EC8EF551DB38FC6001C0EC2 /* AppDelegate.m */; };
 		9EC8EF591DB38FC6001C0EC2 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EC8EF581DB38FC6001C0EC2 /* ViewController.m */; };
@@ -14,6 +15,7 @@
 		9EC8EF5E1DB38FC6001C0EC2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9EC8EF5D1DB38FC6001C0EC2 /* Assets.xcassets */; };
 		9EC8EF611DB38FC6001C0EC2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9EC8EF5F1DB38FC6001C0EC2 /* LaunchScreen.storyboard */; };
 		9EC8EF6C1DB38FC7001C0EC2 /* travel_appTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EC8EF6B1DB38FC7001C0EC2 /* travel_appTests.m */; };
+		E736D86DB98F1C1E5917D288 /* libPods-travel-app.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 482D30A242D19A5168444FA3 /* libPods-travel-app.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +29,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		482D30A242D19A5168444FA3 /* libPods-travel-app.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-travel-app.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		666342B74C3DACD04E9FE4C8 /* Pods-travel-app.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-travel-app.debug.xcconfig"; path = "Pods/Target Support Files/Pods-travel-app/Pods-travel-app.debug.xcconfig"; sourceTree = "<group>"; };
+		87CFE61FBF42936AEFBE3385 /* Pods-travel-app.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-travel-app.release.xcconfig"; path = "Pods/Target Support Files/Pods-travel-app/Pods-travel-app.release.xcconfig"; sourceTree = "<group>"; };
 		9EC8EF4E1DB38FC6001C0EC2 /* travel-app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "travel-app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9EC8EF521DB38FC6001C0EC2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		9EC8EF541DB38FC6001C0EC2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -40,6 +45,9 @@
 		9EC8EF671DB38FC6001C0EC2 /* travel-appTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "travel-appTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9EC8EF6B1DB38FC7001C0EC2 /* travel_appTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = travel_appTests.m; sourceTree = "<group>"; };
 		9EC8EF6D1DB38FC7001C0EC2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CFAFEBEDC045DD7271B6EC85 /* Pods-travel-appTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-travel-appTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-travel-appTests/Pods-travel-appTests.debug.xcconfig"; sourceTree = "<group>"; };
+		DF1B8346973602A99CAAE2FA /* Pods-travel-appTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-travel-appTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-travel-appTests/Pods-travel-appTests.release.xcconfig"; sourceTree = "<group>"; };
+		ED4D4BC4E93DC658CD3BF54B /* libPods-travel-appTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-travel-appTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +55,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E736D86DB98F1C1E5917D288 /* libPods-travel-app.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -54,18 +63,41 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3E6F84EDFA83A5D148258062 /* libPods-travel-appTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3EC8A99880201EC01BBF7414 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				482D30A242D19A5168444FA3 /* libPods-travel-app.a */,
+				ED4D4BC4E93DC658CD3BF54B /* libPods-travel-appTests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		96FBFF63C5C3FE841ECE493A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				666342B74C3DACD04E9FE4C8 /* Pods-travel-app.debug.xcconfig */,
+				87CFE61FBF42936AEFBE3385 /* Pods-travel-app.release.xcconfig */,
+				CFAFEBEDC045DD7271B6EC85 /* Pods-travel-appTests.debug.xcconfig */,
+				DF1B8346973602A99CAAE2FA /* Pods-travel-appTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		9EC8EF451DB38FC6001C0EC2 = {
 			isa = PBXGroup;
 			children = (
 				9EC8EF501DB38FC6001C0EC2 /* travel-app */,
 				9EC8EF6A1DB38FC7001C0EC2 /* travel-appTests */,
 				9EC8EF4F1DB38FC6001C0EC2 /* Products */,
+				96FBFF63C5C3FE841ECE493A /* Pods */,
+				3EC8A99880201EC01BBF7414 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -118,9 +150,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9EC8EF701DB38FC7001C0EC2 /* Build configuration list for PBXNativeTarget "travel-app" */;
 			buildPhases = (
+				CA60B78F82530DB236DA365E /* [CP] Check Pods Manifest.lock */,
 				9EC8EF4A1DB38FC6001C0EC2 /* Sources */,
 				9EC8EF4B1DB38FC6001C0EC2 /* Frameworks */,
 				9EC8EF4C1DB38FC6001C0EC2 /* Resources */,
+				CB5DB6F613CD50A13487181F /* [CP] Embed Pods Frameworks */,
+				91002E8E0BF7F9CBA00DA32A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -135,9 +170,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9EC8EF731DB38FC7001C0EC2 /* Build configuration list for PBXNativeTarget "travel-appTests" */;
 			buildPhases = (
+				76F37551C0192045ED8A616F /* [CP] Check Pods Manifest.lock */,
 				9EC8EF631DB38FC6001C0EC2 /* Sources */,
 				9EC8EF641DB38FC6001C0EC2 /* Frameworks */,
 				9EC8EF651DB38FC6001C0EC2 /* Resources */,
+				4E683F0CE60060E001649275 /* [CP] Embed Pods Frameworks */,
+				03BC803FFC9CC8FA3CD65238 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -209,6 +247,99 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		03BC803FFC9CC8FA3CD65238 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-travel-appTests/Pods-travel-appTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4E683F0CE60060E001649275 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-travel-appTests/Pods-travel-appTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		76F37551C0192045ED8A616F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		91002E8E0BF7F9CBA00DA32A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-travel-app/Pods-travel-app-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CA60B78F82530DB236DA365E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		CB5DB6F613CD50A13487181F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-travel-app/Pods-travel-app-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		9EC8EF4A1DB38FC6001C0EC2 /* Sources */ = {
@@ -299,7 +430,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -341,7 +472,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -351,6 +482,7 @@
 		};
 		9EC8EF711DB38FC7001C0EC2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 666342B74C3DACD04E9FE4C8 /* Pods-travel-app.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 6AD266UVVD;
@@ -363,6 +495,7 @@
 		};
 		9EC8EF721DB38FC7001C0EC2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 87CFE61FBF42936AEFBE3385 /* Pods-travel-app.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 6AD266UVVD;
@@ -375,6 +508,7 @@
 		};
 		9EC8EF741DB38FC7001C0EC2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CFAFEBEDC045DD7271B6EC85 /* Pods-travel-appTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEVELOPMENT_TEAM = 6AD266UVVD;
@@ -388,6 +522,7 @@
 		};
 		9EC8EF751DB38FC7001C0EC2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DF1B8346973602A99CAAE2FA /* Pods-travel-appTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEVELOPMENT_TEAM = 6AD266UVVD;
@@ -418,6 +553,7 @@
 				9EC8EF721DB38FC7001C0EC2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9EC8EF731DB38FC7001C0EC2 /* Build configuration list for PBXNativeTarget "travel-appTests" */ = {
 			isa = XCConfigurationList;
@@ -426,6 +562,7 @@
 				9EC8EF751DB38FC7001C0EC2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
