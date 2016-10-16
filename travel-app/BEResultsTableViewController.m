@@ -29,20 +29,18 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.tableView.rowHeight = 100;
     self.tableView.dataSource = self.dataSource;
-    [self.dataSource update];
+    [self.tableView registerNib:[UINib nibWithNibName:@"BETravelItemTableViewCell" bundle:nil] forCellReuseIdentifier:@"BETravelItemTableViewCell"];
+    [self.dataSource updateWithCompletionBlock:^(BOOL success, NSError *error) {
+        if (success) {
+            [self.tableView reloadData];
+        }
+    }];
 }
 
-#pragma mark - Table view data source
 
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-    return 1;
-}
-
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-#warning Incomplete implementation, return the number of rows
-    return 0;
-}
+#pragma mark lazy instantiation
 
 - (BEResultsTableViewDataSource *)dataSource {
     if (!_dataSource) {
@@ -50,27 +48,5 @@
     }
     return _dataSource;
 }
-
-/*
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
-    
-    // Configure the cell...
-    
-    return cell;
-}
-*/
-
-
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

@@ -11,10 +11,10 @@
 @interface BETravelItem : NSObject
 
 @property (copy, nonatomic, readonly) NSString *identifier;
-@property (copy, nonatomic, readonly) NSURL *logoUrl;
+@property (copy, nonatomic, readonly) NSString *logoTemplateUrlString;
 @property (copy, nonatomic, readonly) NSNumber *priceEuro;
-@property (copy, nonatomic, readonly) NSString *departureDate;
-@property (copy, nonatomic, readonly) NSString *arrivalDate;
+@property (copy, nonatomic, readonly) NSDate *departureDate;
+@property (copy, nonatomic, readonly) NSDate *arrivalDate;
 @property (copy, nonatomic, readonly) NSNumber *numberStops;
 
 + (NSArray <BETravelItem *> *)travelItemsFromArray:(NSArray *)array;

@@ -10,6 +10,8 @@
 
 #import "AFNetworking.h"
 #import "BETravelItem.h"
+#import "BETravelItemTableViewCell.h"
+#import "BETravelItemViewModel.h"
 
 @interface BEResultsTableViewDataSource ()
 
@@ -30,23 +32,31 @@
     return self;
 }
 
-- (void)update {
+- (void)updateWithCompletionBlock:(BEUpdateCompletionBlock)completion {
     [self.sessionManager GET:self.url.absoluteString parameters:nil progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         if ([responseObject isKindOfClass:[NSArray class]]) {
             self.items = [BETravelItem travelItemsFromArray:responseObject];
+            completion(YES, nil);
         }
         
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
-        
+        completion(NO, error);
     }];
 }
 
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 0;
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    BETravelItemTableViewCell *cell = (BETravelItemTableViewCell *)[tableView dequeueReusableCellWithIdentifier:@"BETravelItemTableViewCell" forIndexPath:indexPath];
+    BETravelItemViewModel *itemViewModel = [[BETravelItemViewModel alloc] initWithTravelItem:self.items[indexPath.row] andLogoSize:@"63"];
+    [cell updateWithItemViewModel:itemViewModel];
+    return cell;
 }
 
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    return nil;
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+    return 1;
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return self.items.count;
 }
 
 @end

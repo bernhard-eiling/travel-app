@@ -19,6 +19,11 @@
 		9EC8EF811DB39A88001C0EC2 /* BEResultsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EC8EF801DB39A88001C0EC2 /* BEResultsTableViewController.m */; };
 		9EC8EF841DB3A7EF001C0EC2 /* BEResultsTableViewDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EC8EF831DB3A7EF001C0EC2 /* BEResultsTableViewDataSource.m */; };
 		9EC8EF871DB3B048001C0EC2 /* BETravelItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EC8EF861DB3B048001C0EC2 /* BETravelItem.m */; };
+		9EC8EF8B1DB3B5BE001C0EC2 /* BETravelItemTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EC8EF891DB3B5BE001C0EC2 /* BETravelItemTableViewCell.m */; };
+		9EC8EF8C1DB3B5BE001C0EC2 /* BETravelItemTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9EC8EF8A1DB3B5BE001C0EC2 /* BETravelItemTableViewCell.xib */; };
+		9EC8EF8F1DB3B73A001C0EC2 /* BETravelItemViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EC8EF8E1DB3B73A001C0EC2 /* BETravelItemViewModel.m */; };
+		9EC8EF921DB3D9DB001C0EC2 /* NSDictionary+SaveParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EC8EF911DB3D9DB001C0EC2 /* NSDictionary+SaveParser.m */; };
+		9EC8EF951DB3DEF1001C0EC2 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9EC8EF971DB3DEF1001C0EC2 /* Localizable.strings */; };
 		E736D86DB98F1C1E5917D288 /* libPods-travel-app.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 482D30A242D19A5168444FA3 /* libPods-travel-app.a */; };
 /* End PBXBuildFile section */
 
@@ -57,6 +62,15 @@
 		9EC8EF831DB3A7EF001C0EC2 /* BEResultsTableViewDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BEResultsTableViewDataSource.m; sourceTree = "<group>"; };
 		9EC8EF851DB3B048001C0EC2 /* BETravelItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BETravelItem.h; sourceTree = "<group>"; };
 		9EC8EF861DB3B048001C0EC2 /* BETravelItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BETravelItem.m; sourceTree = "<group>"; };
+		9EC8EF881DB3B5BE001C0EC2 /* BETravelItemTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BETravelItemTableViewCell.h; sourceTree = "<group>"; };
+		9EC8EF891DB3B5BE001C0EC2 /* BETravelItemTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BETravelItemTableViewCell.m; sourceTree = "<group>"; };
+		9EC8EF8A1DB3B5BE001C0EC2 /* BETravelItemTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BETravelItemTableViewCell.xib; sourceTree = "<group>"; };
+		9EC8EF8D1DB3B73A001C0EC2 /* BETravelItemViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BETravelItemViewModel.h; sourceTree = "<group>"; };
+		9EC8EF8E1DB3B73A001C0EC2 /* BETravelItemViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BETravelItemViewModel.m; sourceTree = "<group>"; };
+		9EC8EF901DB3D9DB001C0EC2 /* NSDictionary+SaveParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+SaveParser.h"; sourceTree = "<group>"; };
+		9EC8EF911DB3D9DB001C0EC2 /* NSDictionary+SaveParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+SaveParser.m"; sourceTree = "<group>"; };
+		9EC8EF961DB3DEF1001C0EC2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
+		9EC8EF981DB3DEF2001C0EC2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		CFAFEBEDC045DD7271B6EC85 /* Pods-travel-appTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-travel-appTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-travel-appTests/Pods-travel-appTests.debug.xcconfig"; sourceTree = "<group>"; };
 		DF1B8346973602A99CAAE2FA /* Pods-travel-appTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-travel-appTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-travel-appTests/Pods-travel-appTests.release.xcconfig"; sourceTree = "<group>"; };
 		ED4D4BC4E93DC658CD3BF54B /* libPods-travel-appTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-travel-appTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -142,6 +156,14 @@
 				9EC8EF831DB3A7EF001C0EC2 /* BEResultsTableViewDataSource.m */,
 				9EC8EF851DB3B048001C0EC2 /* BETravelItem.h */,
 				9EC8EF861DB3B048001C0EC2 /* BETravelItem.m */,
+				9EC8EF881DB3B5BE001C0EC2 /* BETravelItemTableViewCell.h */,
+				9EC8EF891DB3B5BE001C0EC2 /* BETravelItemTableViewCell.m */,
+				9EC8EF8A1DB3B5BE001C0EC2 /* BETravelItemTableViewCell.xib */,
+				9EC8EF8D1DB3B73A001C0EC2 /* BETravelItemViewModel.h */,
+				9EC8EF8E1DB3B73A001C0EC2 /* BETravelItemViewModel.m */,
+				9EC8EF901DB3D9DB001C0EC2 /* NSDictionary+SaveParser.h */,
+				9EC8EF911DB3D9DB001C0EC2 /* NSDictionary+SaveParser.m */,
+				9EC8EF971DB3DEF1001C0EC2 /* Localizable.strings */,
 			);
 			path = "travel-app";
 			sourceTree = "<group>";
@@ -253,7 +275,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9EC8EF951DB3DEF1001C0EC2 /* Localizable.strings in Resources */,
 				9EC8EF611DB38FC6001C0EC2 /* LaunchScreen.storyboard in Resources */,
+				9EC8EF8C1DB3B5BE001C0EC2 /* BETravelItemTableViewCell.xib in Resources */,
 				9EC8EF5E1DB38FC6001C0EC2 /* Assets.xcassets in Resources */,
 				9EC8EF5C1DB38FC6001C0EC2 /* Main.storyboard in Resources */,
 			);
@@ -371,8 +395,11 @@
 				9EC8EF841DB3A7EF001C0EC2 /* BEResultsTableViewDataSource.m in Sources */,
 				9EC8EF871DB3B048001C0EC2 /* BETravelItem.m in Sources */,
 				9EC8EF811DB39A88001C0EC2 /* BEResultsTableViewController.m in Sources */,
+				9EC8EF8B1DB3B5BE001C0EC2 /* BETravelItemTableViewCell.m in Sources */,
+				9EC8EF921DB3D9DB001C0EC2 /* NSDictionary+SaveParser.m in Sources */,
 				9EC8EF561DB38FC6001C0EC2 /* AppDelegate.m in Sources */,
 				9EC8EF531DB38FC6001C0EC2 /* main.m in Sources */,
+				9EC8EF8F1DB3B73A001C0EC2 /* BETravelItemViewModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -409,6 +436,15 @@
 				9EC8EF601DB38FC6001C0EC2 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		9EC8EF971DB3DEF1001C0EC2 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9EC8EF961DB3DEF1001C0EC2 /* Base */,
+				9EC8EF981DB3DEF2001C0EC2 /* en */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

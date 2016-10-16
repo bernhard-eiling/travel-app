@@ -8,9 +8,15 @@
 
 #import <UIKit/UIKit.h>
 
+@class BETravelItem;
+
+typedef void (^BEUpdateCompletionBlock)(BOOL success, NSError *error);
+
 @interface BEResultsTableViewDataSource : NSObject <UITableViewDataSource>
 
+@property (strong, nonatomic, readonly) NSArray <BETravelItem *> *items;
+
 - (instancetype)initWithUrl:(NSURL *)url;
-- (void)update;
+- (void)updateWithCompletionBlock:(BEUpdateCompletionBlock)completion;
 
 @end

@@ -8,13 +8,16 @@
 
 #import "BETravelItem.h"
 
+#import <Foundation/Foundation.h>
+#import "NSDictionary+SaveParser.h"
+
 @interface BETravelItem ()
 
 @property (copy, nonatomic, readwrite) NSString *identifier;
-@property (copy, nonatomic, readwrite) NSURL *logoUrl;
+@property (copy, nonatomic, readwrite) NSString *logoTemplateUrlString;
 @property (copy, nonatomic, readwrite) NSNumber *priceEuro;
-@property (copy, nonatomic, readwrite) NSString *departureTime;
-@property (copy, nonatomic, readwrite) NSString *arrivalTime;
+@property (copy, nonatomic, readwrite) NSDate *departureDate;
+@property (copy, nonatomic, readwrite) NSDate *arrivalDate;
 @property (copy, nonatomic, readwrite) NSNumber *numberStops;
 
 @end
@@ -38,13 +41,23 @@
     self = [super init];
     if (self) {
         self.identifier = dataDictionary[@"id"];
-        self.logoUrl = dataDictionary[@"provider_logo"];
-        self.priceEuro = dataDictionary[@"price_in_euros"];
-        self.departureTime = dataDictionary[@"departure_time"];
-        self.arrivalTime = dataDictionary[@"arrival_time"];
-        self.numberStops = dataDictionary[@"number_of_stops"];
+        self.logoTemplateUrlString = dataDictionary[@"provider_logo"];
+        self.priceEuro = [dataDictionary numberWithKey:@"price_in_euros"];
+        self.departureDate = [self.class.dateFormatter dateFromString:dataDictionary[@"departure_time"]];
+        self.arrivalDate = [self.class.dateFormatter dateFromString:dataDictionary[@"arrival_time"]];
+        self.numberStops = [dataDictionary numberWithKey:@"number_of_stops"];
     }
     return self;
+}
+
++ (NSDateFormatter *)dateFormatter {
+    static dispatch_once_t dateFormatterOnceToken;
+    static NSDateFormatter *dateFormatter;
+    dispatch_once(&dateFormatterOnceToken, ^{
+        dateFormatter = [[NSDateFormatter alloc] init];
+        dateFormatter.dateFormat = @"HH:mm";
+    });
+    return dateFormatter;
 }
 
 @end
